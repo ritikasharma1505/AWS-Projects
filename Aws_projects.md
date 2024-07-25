@@ -1,5 +1,3 @@
-<p> Create an Audio Transcript with Amazon Transcribe </p>
-
 <p> Step 1: Create an S3 bucket and upload sample audio file </p>
 
 <p> Step 2: Create transcription job </p>

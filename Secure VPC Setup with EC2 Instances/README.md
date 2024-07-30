@@ -8,6 +8,7 @@
 <p>Choose number of AZ in which to create NAT gateways(Note that there is a charge for each NAT gateway) </p>
 <p>To route traffic to Amazon Simple Storage Service (Amazon S3) buckets more securely, you can choose the S3 Gateway endpoint by default(in this case none) </p>
 <p>Choose Create VPC at the bottom of the page</p>
+![alt text](image.png)
 
 
 <h3>Steps to create an EC2 Auto-scaling group</h3>

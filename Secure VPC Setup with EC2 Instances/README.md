@@ -12,12 +12,12 @@
 
 
 <h3>Steps to create an EC2 Auto-scaling group</h3>
-Step 1: Create a launch template
-Step 2: Create a single-instance Auto Scaling group
-Step 3: Verify your Auto Scaling group
-Step 4: Terminate an instance in your Auto Scaling group
-Step 5: Next steps
-Step 6: Clean up
+- Step 1: Create a launch template
+- Step 2: Create a single-instance Auto Scaling group
+- Step 3: Verify your Auto Scaling group
+- Step 4: Terminate an instance in your Auto Scaling group
+- Step 5: Next steps
+- Step 6: Clean up
 
 
 # H1

@@ -8,7 +8,9 @@
 - Choose Max desired capacity
 - Create auto scaling group
 
-![alt text](image-3.png)
 
 ![alt text](image-4.png)
+
+![alt text](image-8.png)
+
 

@@ -7,3 +7,5 @@
 - create security groups with two inbound rules -  ssh/22, custom tcp/8000
 - vpc
 - Create launch template
+
+![alt text](image-1.png)

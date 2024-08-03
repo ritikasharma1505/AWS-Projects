@@ -68,11 +68,11 @@
 ## Steps to access bastian host and EC2 servers in private subnet - app deployment process
 - Using MobaXterm to access bastian host and EC2 servers
 - To access bastian host - we need Public IP address of the bastian host
-- Use this command to upload '.pem' file to bastian host : "scp -i /home/ubuntu/filename.pem /home/ubuntu/filename.pem ubuntu@<PublicIP>:/home/ubuntu" (This is the location in my pc)
+- Use this command to upload '.pem' file to bastian host : "scp -i /home/ubuntu/filename.pem /home/ubuntu/filename.pem ubuntu@<public IP>:/home/ubuntu" (This is the location in my pc)
 - Use this command to confirm if file uploaded : <ls | grep "file-name">
-- Now login to the bastian host using the command : "ssh -i ".pem file" ubuntu@<publicIP>"
+- Now login to the bastian host using the command : "ssh -i ".pem file" ubuntu@<public IP>"
 - Use this command to check the file : "ls"
-- Now login to the first private ec2 instance : "ssh -i ".pem file" ubuntu@<privateIP>"
+- Now login to the first private ec2 instance : "ssh -i ".pem file" ubuntu@<private IP>"
 - Use vim command to create a index.html file: "vim index.html" that will serve as an app
 - Run this command to deploy an app : "python3 -m http.server 8000"
 - Access the deployed app using the 'dns name' of the load balancer

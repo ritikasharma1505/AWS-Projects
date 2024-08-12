@@ -35,6 +35,27 @@ Step 7: Verify the Installation
 http://your-ec2-public-dns
 - You should see the Nginx welcome page, indicating that Nginx is successfully installed and running.
 
+**NOTE**
+
+- Check the Nginx Version, Run the following command to see if Nginx is installed and to check its version:
+
+```
+nginx -v
+
+```
+- Check the Service Status, You can also check the status of the Nginx service to see if it is installed and running:
+
+```
+sudo systemctl status nginx
+
+```
+- To stop Nginx on your EC2 instance running Ubuntu (or any Linux distribution), you can use the following command:
+
+```
+sudo systemctl stop nginx
+
+```
+
 ![alt text](EC2-summary.png)
 
 ![alt text](Nginx-server.png)

@@ -1,5 +1,5 @@
 ## Create an EC2 instance
-- Create an EC2 instance with a security group having inbound rule for protocol 'custom TCP'and port '8080'
+- Create an Ubuntu EC2 instance with a security group having inbound rule for protocol 'custom TCP' port '8080' and 'ssh' port '22'
 
 - Install Java JDK
 
@@ -8,7 +8,7 @@ sudo apt update
 sudo apt install openjdk-17-jre
 java --version
 ```
-- Install Jenkins 
+- To install Jenkins 
 
 ```
 curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
@@ -16,23 +16,29 @@ curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
+
 sudo apt-get update
 sudo apt-get install jenkins
 ```
 
 - Login to Jenkins Server using the below URL:
-http://EC2PublicIPAdress:8080 
+http://EC2-Public-IPAdress:8080 (replace with Public IP of your EC2 Instance)
 
-- After you login to Jenkins - 
-Run the command to copy the Jenkins Admin Password 
+![alt text](Jenkins_ready.png)
+
+- After you login to Jenkins, run the command to copy the Jenkins Admin Password 
 
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ```
-Enter the Administrator password
+- Enter the Administrator password
+
+![alt text](Jenkins_login_page.png)
 
 - Click on Install suggested plugins
+
+![alt text](Jenkins_logged_in.png)
 
 - Create First Admin User or Skip the step
 
@@ -52,6 +58,8 @@ sudo apt update
 sudo apt install docker.io
 
 ```
+
+
 - Grant Jenkins user and Ubuntu user permission to docker daemon
 
 ```
@@ -70,3 +78,4 @@ http://ec2-instance-public-ip:8080/restart
 ```
 - The docker agent configuration is now successful.
 
+**Project Credits to - Abhishek Veeramalla**

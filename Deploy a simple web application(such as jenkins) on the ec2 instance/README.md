@@ -20,3 +20,53 @@ sudo apt-get update
 sudo apt-get install jenkins
 ```
 
+- Login to Jenkins Server using the below URL:
+http://EC2PublicIPAdress:8080 
+
+- After you login to Jenkins - 
+Run the command to copy the Jenkins Admin Password 
+
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+```
+Enter the Administrator password
+
+- Click on Install suggested plugins
+
+- Create First Admin User or Skip the step
+
+- Jenkins Installation is Successful
+
+- Install the Docker Pipeline plugin in Jenkins:
+Log in to Jenkins.
+Go to Manage Jenkins > Manage Plugins.
+In the Available tab, search for "Docker Pipeline".
+Select the plugin and click the Install button.
+Restart Jenkins after the plugin is installed.
+
+- Docker Agent Configuration
+
+```
+sudo apt update
+sudo apt install docker.io
+
+```
+- Grant Jenkins user and Ubuntu user permission to docker daemon
+
+```
+sudo su - 
+usermod -aG docker jenkins
+usermod -aG docker ubuntu
+systemctl restart docker
+
+```
+
+- Once you complete above steps, restart Jenkins
+
+```
+http://ec2-instance-public-ip:8080/restart
+
+```
+- The docker agent configuration is now successful.
+

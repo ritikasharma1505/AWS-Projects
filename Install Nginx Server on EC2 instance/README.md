@@ -32,5 +32,9 @@ sudo systemctl enable nginx
 ```
 Step 7: Verify the Installation
 - Open a web browser and navigate to your EC2 instance's public IP or DNS:
-http://<your-ec2-public-dns>
+http://your-ec2-public-dns
 - You should see the Nginx welcome page, indicating that Nginx is successfully installed and running.
+
+![alt text](EC2-summary.png)
+
+![alt text](Nginx-server.png)

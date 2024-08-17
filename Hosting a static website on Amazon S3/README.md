@@ -1,5 +1,5 @@
 ## Host a static website on Amazon S3
-
+"A static website has static content created in HTML, CSS, and JavaScript"
 
 Step 1: Create a bucket
 
@@ -85,3 +85,16 @@ Step 7: Test your website endpoint
 
 Step 8: Clean up
 - Delete the AWS resources that you allocated so that you no longer accrue charges. After you delete your AWS resources, your website is no longer available.
+
+**Extra Note: Amazon S3 static websites support only HTTP endpoints.
+If you want to use HTTPS, you can use Amazon CloudFront to serve a static website hosted on Amazon S3
+To use HTTPS with a custom domain, see Configuring a static website using a custom domain registered with Route 53.**
+
+Why Hosting static website on Amazon S3?
+
++ Highly Available: Because AWS S3 allows for unlimited object storage and replicates each object across multiple availability zones, high availability, and durability are guaranteed even in the event of an AZ failure.
++ Security: AWS S3, which is managed and maintained by AWS, is a highly secure service that can be made even more secure by turning on bucket encryption.
+
++ Easy to manage and maintain: When necessary, AWS S3 offers a simple console interface for managing and maintaining bucket objects. It also offers API support using the AWS SDKs that are available.
+
++ Easy integration with other AWS services: Other AWS services like CloudFront, Route53, CloudWatch, Lambda, etc. can be used with AWS S3 with ease.
